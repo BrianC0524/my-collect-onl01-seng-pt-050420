@@ -14,7 +14,9 @@ def my_collect(array)
   
 end
 
-my_collect()
+my_collect(students) do |name|
+  name.split(" ").first
+end
 
 my_collect(languages) do |lang|
   lang.upcase
